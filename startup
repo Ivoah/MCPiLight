@@ -1,0 +1,11 @@
+-- This file goes on the computer in Minecraft
+
+args = {...}
+
+url = args[1] or "http://raspberrypi.local:3141"
+side = args[2] or "top"
+
+while true do
+  http.get(url .. "/" .. rs.getAnalogInput(side)*10)
+  sleep(tonumber(args[3]) or 1)
+end
