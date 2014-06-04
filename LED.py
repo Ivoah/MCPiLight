@@ -10,7 +10,6 @@ setmode(BCM)
 
 LED = 23
 
-setup(SIG, IN)
 setup(LED, OUT)
 
 p = PWM(LED, 100)
